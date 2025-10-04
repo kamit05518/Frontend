@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import girl2Image from "../assets/girl2.png";
 import orangeImage from "../assets/orange.png";
-import burgerImage from "../assets/burger.png";
+import BurgerImage from "../assets/Burger.png";
 
 function Hero() {
   return (
