@@ -12,7 +12,7 @@ const ForgotPassword = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:5001/api/auth/forgot-password', { email });
+      const res = await axios.post('https://backend-1mxo.onrender.com/api/auth/forgot-password', { email });
 
       message.success(res.data.message || 'OTP sent to your email');
       navigate('/reset-password', { state: { email } });

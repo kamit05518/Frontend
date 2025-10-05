@@ -11,7 +11,7 @@ const Categories = ({ onCategoryClick }) => {
   const fetchCategories = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:5001/api/categories");
+      const response = await axios.get("https://backend-1mxo.onrender.com/api/categories");
 
       console.log("Categories API Response:", response.data);
 

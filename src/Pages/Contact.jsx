@@ -17,7 +17,7 @@ const Contact = () => {
   const onFinish = async (values) => {
     try {
       const res = await axios.post(
-        "http://localhost:5001/api/auth/contact",
+        "https://backend-1mxo.onrender.com/api/auth/contact",
         values
       );
       toast.success(res.data.message || "Message sent successfully!");

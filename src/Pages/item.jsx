@@ -10,7 +10,7 @@ const Items = ({ subcategoryId, subcategoryName }) => {
 
   const { addToCart } = useCart();
 
-  const API_BASE_URL = "http://localhost:5001";
+  const API_BASE_URL = "https://backend-1mxo.onrender.com";
 
   const fetchItems = async (id) => {
     if (!id) {

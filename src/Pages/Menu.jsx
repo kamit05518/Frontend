@@ -16,7 +16,7 @@ const Menu = () => {
   const fetchCategories = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:5001/api/categories");
+      const response = await axios.get("https://backend-1mxo.onrender.com/api/categories");
       setCategories(response.data.categories || []);
     } catch (err) {
       console.error("Error fetching categories:", err);
@@ -27,7 +27,7 @@ const Menu = () => {
 
   const fetchAllItems = async () => {
     try {
-      const response = await axios.get("http://localhost:5001/api/items");
+      const response = await axios.get("https://backend-1mxo.onrender.com/api/items");
       const data = Array.isArray(response.data)
         ? response.data
         : response.data.items || response.data.data || [];

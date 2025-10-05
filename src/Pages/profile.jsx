@@ -27,7 +27,7 @@ const Profile = () => {
   const fetchProfileData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:5001/api/profile");
+      const response = await axios.get("https://backend-1mxo.onrender.com/api/profile");
       const data = response.data;
 
       setForm({
@@ -48,7 +48,7 @@ const Profile = () => {
         profileImage: null,
       });
 
-      setPreviewImage(data.profileImage ? `http://localhost:5001${data.profileImage}` : null);
+      setPreviewImage(data.profileImage ? `https://backend-1mxo.onrender.com${data.profileImage}` : null);
 
       setIsDataLoaded(true);
     } catch (error) {
@@ -89,7 +89,7 @@ const Profile = () => {
       formData.append("gender", form.gender);
       if (form.profileImage) formData.append("profileImage", form.profileImage);
 
-      await axios.post("http://localhost:5001/api/profile", formData, {
+      await axios.post("https://backend-1mxo.onrender.com/api/profile", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

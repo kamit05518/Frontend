@@ -43,7 +43,7 @@ const About = () => {
   useEffect(() => {
     const fetchChefs = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/api/chefs");
+        const response = await axios.get("https://backend-1mxo.onrender.com/api/chefs");
         setChefs(response.data.chefs);
       } catch (error) {
         console.error("Error fetching chefs:", error);
