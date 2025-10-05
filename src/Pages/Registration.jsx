@@ -42,7 +42,7 @@ const Register = () => {
 
     // API Call
     try {
-      const res = await axios.post("https://backend-1mxo.onrender.com/api/auth/register", form);
+      const res = await axios.post("http://localhost:5001/api/auth/register", form);
       message.success(res.data.message || "Registered successfully!");
 
       setTimeout(() => {

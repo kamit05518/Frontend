@@ -39,7 +39,7 @@ export default function OrderHistory() {
         }
 
         console.log("Fetching orders from API...");
-        const res = await axios.get("https://backend-1mxo.onrender.com/api/order/orders", {
+        const res = await axios.get("http://localhost:5001/api/order/orders", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -12,7 +12,7 @@ const Subcategories = ({ categoryId, selectedSubcategory, onSubcategoryClick }) 
     try {
       setLoading(true);
       const response = await axios.get(
-        `https://backend-1mxo.onrender.com/api/subcategories/category/${id}`
+        `http://localhost:5001/api/subcategories/category/${id}`
       );
       setSubcategories(response.data.subcategories || []);
       setError(null);

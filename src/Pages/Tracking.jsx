@@ -44,7 +44,7 @@ export default function Tracking() {
 
    const fetchOrderStatus = async () => {
   try {
-    const res = await axios.get(`https://backend-1mxo.onrender.com/api/tracking/orders/${orderId}/status`);
+    const res = await axios.get(`http://localhost:5001/api/tracking/orders/${orderId}/status`);
     const data = res.data;
 
     setCurrentStep(prev => Math.max(prev, data.step));
