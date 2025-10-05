@@ -131,7 +131,7 @@ function Hero() {
                      p-2 md:p-3 lg:p-4 flex items-center gap-2 md:gap-3 z-10 
                      w-[140px] sm:w-[160px] md:w-[180px] font-poppins"
         >
-          <img src={burgerImage} alt="Burger" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded" />
+          <img src={BurgerImage} alt="Burger" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded" />
           <div>
             <p className="text-xs font-semibold font-montserrat">American Burger</p>
             <p className="text-[10px] text-black">$8.75</p>
